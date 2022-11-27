@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 0;
+}
+
+img {
+    height: 19vh;
+    position: absolute;
+}
+
+/*CLASS*/
+.faixa {
+    background-color: yellow;
+    width: 100vw;
+    height: 1vh;
+    position: absolute;
+    margin-top: 19vh;
+}
+
+/*ID*/
+/*img*/
+#amarelo {
+    top: 80vh;
+    right: 0;
+    animation: carroVindo 14s linear infinite;
+}
+
+#azul {
+    top: 40vh;
+    right: 0;
+    animation: carroVindo 12s linear infinite;
+}
+
+#preto {
+    top: 60vh;
+    right: 0;
+    animation: carroVindo 13s linear infinite;
+}
+
+#vermelho {
+    top: 1vh;
+    right: 0;
+    animation: carroVindo 10s linear infinite;
+}
+
+#verde {
+    top: 20vh;
+    right: 0;
+    animation: carroVindo 11s linear infinite;
+}
+
+/*div*/
+#carroAmarelo {
+    height: 19vh;
+    width: 100%;
+    top: 80vh;
+    position: absolute;
+}
+
+#carroAzul {
+    width: 100%;
+    height: 19vh;
+    top: 40vh;
+    position: absolute;
+}
+
+#carroPreto {
+    width: 100%;
+    height: 19vh;
+    top: 60vh;
+    position: absolute;
+}
+
+#carroVerde {
+    width: 100%;
+    height: 19vh;
+    top: 20vh;
+    position: absolute;
+}
+
+#carroVermelho {
+    width: 100%;
+    height: 19vh;
+    top: 1;
+    position: absolute;
+}
+
+#faixa2 {
+    transform: translateY(19vh);
+}
+
+#faixa3 {
+    transform: translateY(38vh);
+}
+
+#faixa4 {
+    transform: translateY(57vh);
+}
+
+#faixa5 {
+    transform: translateY(76vh);
+}
+
+#pista {
+    height: 100vh;
+    background-color: gray;
+}
+
+/*Veículo Caminhão*/
+#cabine {
+    width: 10vh;
+    height: 10vh;
+    margin-top: 0.5vh;
+    border-top-right-radius: 0.25vh;
+    float: right;
+    background-color: red;
+}
+
+#caminhao {
+    width: 25vh;
+    top: 1vh;
+    margin-left: 2vw;
+    position: absolute;
+}
+
+#cano {
+    width: 1vh;
+    height: 10.5vh;
+    background-image: linear-gradient(-45deg, #C0C0C0, #D3D3D3);
+    float: right;
+    border-top-left-radius: 0.25vh;
+    border-top-right-radius: 0.25vh;
+}
+
+#capo {
+    width: 1vh;
+    height: 2.25vh;
+    float: right;
+    clear: both;
+    background-color: #666666;
+}
+
+#chassi {
+    width: 25vh;
+    height: 1.5vh;
+    border-top-left-radius: 0.5vh;
+    border-bottom-left-radius: 0.5vh;
+    border-bottom-right-radius: 0.5vh;
+    float: right;
+    background-color: blue;
+}
+
+#farol {
+    width: 1vh;
+    height: 2vh;
+    margin-top: 0.25vh;
+    float: right;
+    clear: both;
+    background-color: aliceblue;
+}
+
+#janela {
+    width: 5vh;
+    height: 5vh;
+    margin-top: 0.5vh;
+    border-radius: 1.25vh;
+    float: right;
+    background-image: linear-gradient(to right, aqua, white);
+}
+
+#rodaFrente {
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 2.5vh solid black;
+    border-radius: 100%;
+    margin-left: 6vh;
+    float: right;
+    background-color: gray;
+    animation-name: girar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#rodas {
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 2.5vh solid black;
+    border-radius: 100%;
+    margin-left: 0vh;
+    float: right;
+    background-color: gray;
+    animation-name: girar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#seta {
+    width: 1vh;
+    height: 1vh;
+    background-color: #FFA500;
+}
+
+/*Animações*/
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carroVindo {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}

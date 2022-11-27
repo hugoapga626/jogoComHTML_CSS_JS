@@ -1,0 +1,33 @@
+body {
+    background-image: url(../img/fundoUniverso.jpg);
+    background-image: image-set(100vh, 100vw);
+}
+
+img {
+    height: 10vh;
+    z-index: 2;
+}
+
+/*ID*/
+#idInfo {
+    position: absolute;
+    left: 37.5vw;
+    top: 70vh;
+    z-index: 1;
+}
+
+#idNave {
+    position: absolute;
+    left: 40vw;
+    top: 0vh;
+}
+
+#planeta {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 10vh;
+    left: 35vw;
+    background-color: darkgray;
+}
